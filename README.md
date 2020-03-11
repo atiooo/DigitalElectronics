@@ -2,6 +2,10 @@
 ## Midterm Project - Auto-humidifier
 My first iteration works well as the final product. The device will not only ask Alexa to turn on the humidifier when it detects low humidity but also will tell the user how is the weather via the LDR sensor. Also, with the indication of LED, the user can immediately know if the current humidity is high or low. 
 
+### Quick Demo
+![](images/midterm.gif)
+
+### Video Demo
 ![](images/midterm_video.png)
 
 Please refer this link to the complete video demo:
