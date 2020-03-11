@@ -27,6 +27,7 @@ The code is available in the midterm folder. :)
 * LDR Sensor * 1
 * RGB LED * 1
 * Micro SD Card > 64MB * 1
+* Speaker * 1
 #### Assemble
 * Solder the Mp3 Shield to female and male pins
 * Record voice files for weather and humidity
