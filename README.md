@@ -1,3 +1,24 @@
+# Week Ten - Week Fourteen
+## Final Project - Handwash Sensor
+The final project will serve as a smart assistant to remind users to wash their hands during the pandemic season. Due to the shortage of parts, I will re-use parts from the midterm project to deliver a similar effect to the desired deliverable. The project will have two features. Firstly, the sensor will detect if the user has leave the house. If so, the sensor will remind the user to wash their hands when they are back. The second feature will be a reminder at the sink. After the user is back, the sensor will remind the user to wash their hands until the user approaches the sensor and finish the handwashing process. 
+
+The project aims to help people to stay safe during the coronavirus outbreak. With simple parts and assemble instructions, everyone can afford a smart reminder. 
+
+### Scenarios
+### MVP Version
+The MVP will be divided into four pieces. The LDR sensor will serve as a substitute for the distance sensor / RFID due to the fact that it can be difficult to acquire them now. The LED will signify action detection. It will change to red color if anyone enters the house. I will keep using the speaker to trigger the sound notification.
+* LDR (Distance sensor/RFID)
+* LED Light
+* Mp3 Shield
+* Speaker
+
+### Nice-to-have Features
+* Identify who is back and remind them to wash their hands (Unique ID)
+* Check if the user has washed their hands for at least 20 seconds
+* Check if the user is washing in the right way
+
+### Electric Schematic
+
 # Week Four - Week Eight
 ## Midterm Project - Auto-humidifier
 My first iteration works well as the final product. The device will not only ask Alexa to turn on the humidifier when it detects low humidity but also will tell the user how is the weather via the LDR sensor. Also, with the indication of LED, the user can immediately know if the current humidity is high or low. 
