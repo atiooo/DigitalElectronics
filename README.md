@@ -1,10 +1,15 @@
 # Week Ten - Week Fourteen
 ## Final Project - Handwash Sensor
-The final project will serve as a smart assistant to remind users to wash their hands during the pandemic season. Due to the shortage of parts, I will re-use parts from the midterm project to deliver a similar effect to the desired deliverable. The project will have two features. Firstly, the sensor will detect if the user has leave the house. If so, the sensor will remind the user to wash their hands when they are back. The second feature will be a reminder at the sink. After the user is back, the sensor will remind the user to wash their hands until the user approaches the sensor and finish the handwashing process. 
+### Project Brief
+The final project will serve as a smart assistant to remind users to wash their hands during the pandemic season. Due to the shortage of parts, I will re-use parts from the midterm project to deliver a similar effect to the desired deliverable. The project will have two features. Firstly, the sensor will detect if the user has left the house. If so, the sensor will remind the user to wash their hands when they are back. The second feature will be a reminder at the sink. After the user is back, the sensor will remind the user to wash their hands until the user approaches the sensor and finish the handwashing process. 
 
 The project aims to help people to stay safe during the coronavirus outbreak. With simple parts and assemble instructions, everyone can afford a smart reminder. 
 
 ### Scenarios
+Here I illustrated two main features for the device.
+
+![](images/final_scenario.png)
+
 ### MVP Version
 The MVP will be divided into four pieces. The LDR sensor will serve as a substitute for the distance sensor / RFID due to the fact that it can be difficult to acquire them now. The LED will signify action detection. It will change to red color if anyone enters the house. I will keep using the speaker to trigger the sound notification.
 * LDR (Distance sensor/RFID)
@@ -18,6 +23,25 @@ The MVP will be divided into four pieces. The LDR sensor will serve as a substit
 * Check if the user is washing in the right way
 
 ### Electric Schematic
+This echematic diagram will satisfy both features with slight change of the code only. 
+
+![](images/final_schematic.png)
+
+### Pseudocode
+#### 1. Re-enter Detection
+If LDR Value <= Threshold_Enter<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;LED.light = Red<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Speaker.play(Audio1.mp3)<br/>
+else
+&nbsp;&nbsp;&nbsp;&nbsp;LED.light = Green
+#### 2. Handwashing Reminder
+If LDR Value <= Threshold_Wash<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;LED.light = Red<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Speaker.play(Audio2.mp3)<br/>
+If TimeLapse >= 20 Seconds
+&nbsp;&nbsp;&nbsp;&nbsp;LED.light = Green
+
+
 
 # Week Four - Week Eight
 ## Midterm Project - Auto-humidifier
