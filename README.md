@@ -29,13 +29,13 @@ This echematic diagram will satisfy both features with slight change of the code
 
 ### Pseudocode
 #### 1. Re-enter Detection
-If LDR Value <= Threshold_Enter<br/>
+If LDR Value >= Threshold_Enter<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;LED.light = Red<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Speaker.play(Audio1.mp3)<br/>
 else
 &nbsp;&nbsp;&nbsp;&nbsp;LED.light = Green
 #### 2. Handwashing Reminder
-If LDR Value <= Threshold_Wash<br/>
+If LDR Value >= Threshold_Wash<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;LED.light = Red<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Speaker.play(Audio2.mp3)<br/>
 If TimeLapse >= 20 Seconds
