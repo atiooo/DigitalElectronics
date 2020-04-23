@@ -1,3 +1,11 @@
+# Week 13: MVP Update
+## Final Project - Handwash Sensor
+### MVP Update
+Due to the shortage of Arduino parts during this special time period. I was not able to acquire the parts that I needed in the first place. Therefore, I developed the project with the parts that I had from the Midterm. I replaced the RFID sensor to the LDR sensor to achieve a similar goal.
+At the default state, the LED will be in green light to notify the safe state. When the user came back from the house, the LED will then change to red color and the MP3 shield will play pre-record voice notification via the speaker. After the user leave, the light will turn green again to detect the next person who is going to enter the house.
+
+![](images/final_demo.gif)
+
 # Week Ten - Week Fourteen
 ## Final Project - Handwash Sensor
 ### Project Brief
