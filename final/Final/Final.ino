@@ -78,9 +78,10 @@ void loop() {
 
   // check the brightness via LDR
   int ldrValue = analogRead(LDR_PIN);
+// Debug code for LDR value
+//  Serial.print("ldr value: ");
+//  Serial.println(ldrValue);
 
-  Serial.print("ldr value: ");
-  Serial.println(ldrValue);
   // check if the light change over the threshold
   if(ldrValue <= (ldrBase - ldrThreshold) || ldrValue >= (ldrBase + ldrThreshold)) {
     writeRGBLight(255, 0, 0);
@@ -93,6 +94,8 @@ void loop() {
       if (musicPlayer.stopped()) {
         Serial.println("Done playing music1");
       }
+      // uncomment when delay for washing hands
+      // delay(20000);
     }
   } else{
       writeRGBLight(0, 255, 0);
@@ -102,7 +105,7 @@ void loop() {
   delay(1000);
 }
 
-
+// write color to the RGB LED
 void writeRGBLight(int r, int g, int b) {
   analogWrite(RGB_R_PIN, r);
   analogWrite(RGB_G_PIN, g);

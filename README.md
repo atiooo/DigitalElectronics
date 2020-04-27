@@ -1,3 +1,55 @@
+# Week 14: Final Project Presentation
+## Final Project - Handwash Sensor
+### Project Goal
+The project aims to remind people to wash their hands during this special time. There are two features. Firstly, the device will detect the entrance and remind the user to wash their hands via the speaker. When the user is at the sink, the device will remind the user to wash their hands for at least 20 seconds. During washing, the LED light will stay in red color until the user finishes the washing process. The project successfully achieved both the described goals.
+
+### Choices of Hardware and Software
+Due to the shortage of Arduino parts during this special time period. I was not able to acquire the parts that I needed in the first place. I had to replace the RFID sensor to the LDR sensor to achieve a similar goal. While the LDR sensor is not used to detect object specifically, I change the measurement to measure the change of LDR Value. In this way, when the door is open or the user approaches the sink, the change of the LDR value will be sufficient to trigger the device. If available, the LDR sensor can be changed to a RFID sensor. In this way, the device can recognize difference entries.
+
+### Schematic
+(There's no option to add a Mp3 Shield)
+![](images/final_schematic_.png)
+
+### Assemble
+#### Part List
+* Arduino Uno
+* Mp3 Shield
+* Speaker
+* LDR Sensor (Distance/RFID Sensor)
+* RGB LED
+#### Putting Together
+* Solder the Mp3 Shield to female and male pins
+* Record voice files for door entry and sink approachment
+* Name the files as "trackXXX.mp3" eg. track001.mp3
+* Assemble Mp3 Shield, RGB LED, and LDR Sensor 
+#### Coding Time
+* Test Mp3 Shield, RGB LED, and LDR Sensor <b>Separately</b> with the built-in libraries
+* Download the code from the Final Folder and test it out
+#### Ta-Da ✴️
+* Enjoy your smart device and stay healthy!!
+
+
+### Project Pictures
+(The sink gif will last more than 30 seconds thus omitted)
+![](images/final_demo.gif)
+### Demo Video
+Please check the video with both scenarios described and closed up pictures!
+
+https://youtu.be/t-UoP0QwfdU
+
+### Punch List
+#### Essential
+* Detect entry ✅
+* Detect sink approachment ✅
+* Make speaker play notification sound ✅
+* Change LED light to green for clear status ✅
+* Change LED light to red for warning status ✅
+#### Nice-to-have
+* Detect if the user has finished the entry ✅
+* Return to default state automatically ✅
+* Time the user to wash their hands for at least 20 seconds ✅
+
+
 # Week 13: MVP Update
 ## Final Project - Handwash Sensor
 ### MVP Update
