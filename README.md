@@ -12,19 +12,19 @@ Due to the shortage of Arduino parts during this special time period. I was not 
 
 ### Assemble
 #### Part List
-* Arduino Uno
-* Mp3 Shield
-* Speaker
-* LDR Sensor (Distance/RFID Sensor)
-* RGB LED
+* [Arduino Uno](https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/ref=sr_1_3?dchild=1&keywords=arduino+uno&qid=1588020479&sr=8-3)
+* [Mp3 Shield](https://www.amazon.com/Adafruit-Music-Shield-Arduino-Stereo/dp/B01BT4N386/ref=sr_1_2?dchild=1&keywords=mp3+shield&qid=1588020456&sr=8-2)
+* Speaker (Any speaker with AUX port will be sufficient)
+* [LDR Sensor](https://www.amazon.com/eBoot-Photoresistor-Sensitive-Resistor-Dependent/dp/B01N7V536K/ref=sr_1_3?dchild=1&keywords=ldr+sensor&qid=1588020520&sr=8-3) (Distance / [RFID Sensor](https://www.amazon.com/DaFuRui-Sensor-Module-Compatible-Arduino/dp/B081YPV746/ref=sr_1_1_sspa?dchild=1&keywords=rfid+sensor&qid=1588020604&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFJQlk2WTVFSUFFRlAmZW5jcnlwdGVkSWQ9QTAyNzUxOTMxRjZCVklER1hFQlpVJmVuY3J5cHRlZEFkSWQ9QTA2MjM5NjYyRFZBOTFJUVpYM0NRJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==))
+* [RGB LED](https://www.amazon.com/Gikfun-Diffused-Common-Bright-Arduino/dp/B0194Y6MW2/ref=sr_1_9?dchild=1&keywords=rgb+led+arduino&qid=1588020545&sr=8-9)
 #### Putting Together
-* Solder the Mp3 Shield to female and male pins
+* [Solder the Mp3 Shield to female and male pins](https://learn.adafruit.com/adafruit-music-maker-shield-vs1053-mp3-wav-wave-ogg-vorbis-player/assembly)
 * Record voice files for door entry and sink approachment
 * Name the files as "trackXXX.mp3" eg. track001.mp3
 * Assemble Mp3 Shield, RGB LED, and LDR Sensor 
 #### Coding Time
 * Test Mp3 Shield, RGB LED, and LDR Sensor <b>Separately</b> with the built-in libraries
-* Download the code from the Final Folder and test it out
+* Download the code from the <b>Final Folder</b> and test it out
 #### Ta-Da ✴️
 * Enjoy your smart device and stay healthy!!
 
@@ -48,6 +48,8 @@ https://youtu.be/t-UoP0QwfdU
 * Detect if the user has finished the entry ✅
 * Return to default state automatically ✅
 * Time the user to wash their hands for at least 20 seconds ✅
+* Detect who is entering the house (RFID Sensor Required)
+* Detect if the user is washing hands in the right way
 
 
 # Week 13: MVP Update
